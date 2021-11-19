@@ -18,26 +18,26 @@ function Header() {
                         <div class="nav1">
                             <a href="../index.html">
                                 
-                                <h2 class="text-white" id="nav-title"><img src="SB_LOGO_Header.ico"></img>Sudhir Barik</h2>
+                                <h2 class="text-white" id="nav-title"><img src="SB_LOGO_Header.ico" alt="logo"></img>Sudhir Barik</h2>
                             </a>
                         </div>
                         <div class="nav2 navbar-main navbar-transparent navbar-light headroom navbar navbar-expand-lg headroom--not-bottom headroom--pinned headroom--top">
-                            <a href="https://github.com/sudhirbarik2?tab=repositories" target="_blank"
+                            <a href="https://github.com/sudhirbarik2?tab=repositories" target="_blank" rel="noopener noreferrer"
                                 className="github social">
                                 <FontAwesomeIcon icon={faGithub} size="2x" />
                             </a>
-                            <a href="https://www.facebook.com/vicky.barik2" target="_blank"
+                            <a href="https://www.facebook.com/vicky.barik2" target="_blank" rel="noopener noreferrer"
                                 className="facebook social">
                                 <FontAwesomeIcon icon={faFacebook} size="2x" />
                             </a>
-                            <a href="https://twitter.com/VickyBarik"  target="_blank" className="twitter social">
+                            <a href="https://twitter.com/VickyBarik"  target="_blank" rel="noopener noreferrer" className="twitter social">
                                 <FontAwesomeIcon icon={faTwitter} size="2x" />
                             </a>
-                            <a href="https://www.instagram.com/iamvickybarik/?hl=en" target="_blank"
+                            <a href="https://www.instagram.com/iamvickybarik/?hl=en" target="_blank" rel="noopener noreferrer"
                                 className="instagram social">
                                 <FontAwesomeIcon icon={faInstagram} size="2x" />
                             </a>
-                            <a href="https://www.linkedin.com/in/sudhir-barik-258862171/" target="_blank"
+                            <a href="https://www.linkedin.com/in/sudhir-barik-258862171/" target="_blank" rel="noopener noreferrer"
                                 className="linkedin social">
                                 <FontAwesomeIcon icon={faLinkedin} size="2x" />
                             </a>
