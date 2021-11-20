@@ -7,41 +7,59 @@ import {
     faGithub,
     faLinkedin
 } from "@fortawesome/free-brands-svg-icons";
-function Header() {
-    return (
-        <div id='header'>
-            <header>
-                <div class="container">
+import { Link, animateScroll as scroll } from "react-scroll";
 
-                    <div class="nav">
-                       
-                        
-                        <div class="nav2 navbar-main navbar-transparent navbar-light headroom navbar navbar-expand-lg headroom--not-bottom headroom--pinned headroom--top">
-                            <a href="https://github.com/sudhirbarik2?tab=repositories" target="_blank" rel="noopener noreferrer"
-                                className="github social">
-                                <FontAwesomeIcon icon={faGithub} size="2x" />
-                            </a>
-                            <a href="https://www.facebook.com/vicky.barik2" target="_blank" rel="noopener noreferrer"
-                                className="facebook social">
-                                <FontAwesomeIcon icon={faFacebook} size="2x" />
-                            </a>
-                            <a href="https://twitter.com/VickyBarik"  target="_blank" rel="noopener noreferrer" className="twitter social">
-                                <FontAwesomeIcon icon={faTwitter} size="2x" />
-                            </a>
-                            <a href="https://www.instagram.com/iamvickybarik/?hl=en" target="_blank" rel="noopener noreferrer"
-                                className="instagram social">
-                                <FontAwesomeIcon icon={faInstagram} size="2x" />
-                            </a>
-                            <a href="https://www.linkedin.com/in/sudhir-barik-258862171/" target="_blank" rel="noopener noreferrer"
-                                className="linkedin social">
-                                <FontAwesomeIcon icon={faLinkedin} size="2x" />
-                            </a>
-                            <div/>
-                        </div>
-                    </div>
-                </div>
-            </header>
+function Header() {
+
+    return (
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+            
+        <a class="navbar-brand brand" href="#">{" "}{" "}{" "}Sudhir Barik</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+
+                </ul>
+
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <Link
+                            activeClass="active"
+                            to="portfolio"
+                            spy={true}
+                            smooth={true}
+                            offset={-70}
+                            duration={500} >
+                            <a class="nav-link " href="#portfolio">Projects <span class="sr-only">(current)</span></a></Link>
+                </li>
+                <li class="nav-item active">
+                <Link
+                            activeClass="active"
+                            to="skills"
+                            spy={true}
+                            smooth={true}
+                            offset={-70}
+                            duration={500} >
+                            <a class="nav-link " href="#portfolio">Skills <span class="sr-only">(current)</span></a></Link>
+                </li><li class="nav-item active">
+                <Link
+                            activeClass="active"
+                            to="resume"
+                            spy={true}
+                            smooth={true}
+                            offset={-70}
+                            duration={500} >
+                            <a class="nav-link " href="#portfolio">Experience <span class="sr-only">(current)</span></a></Link>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Resume <span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
         </div>
+        </nav >
     );
 }
 

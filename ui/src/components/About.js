@@ -3,7 +3,16 @@ import { Icon } from "@iconify/react";
 import angularIcon from "@iconify/icons-logos/angular-icon";
 import reactIcon from "@iconify/icons-logos/react";
 import vueIcon from "@iconify/icons-logos/vue";
-
+import SocialLinks from "./SocialLinks";
+import { Card, Col, Row, Container } from "reactstrap";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faFacebook,
+  faTwitter,
+  faInstagram,
+  faGithub,
+  faLinkedin
+} from "@fortawesome/free-brands-svg-icons";
 class About extends Component {
   render() {
 
@@ -38,7 +47,7 @@ class About extends Component {
             <div className="col-md-8 center">
               <div className="col-md-10">
                 <div className="card">
-                  <div className="card-header">
+                  <div className="card-header buttons-align">
                     <span
                       className="iconify"
                       data-icon="emojione:red-circle"
@@ -61,7 +70,7 @@ class About extends Component {
                     className="card-body font-trebuchet text-justify ml-3 mr-3"
                     style={{
                       height: "auto",
-                      fontSize: "132%",
+                      fontSize: "172%",
                       lineHeight: "200%",
                     }}
                   >
@@ -70,6 +79,8 @@ class About extends Component {
                     <br />
                     <br />
                     {about}
+                    <SocialLinks/>
+                    <div class="btn-wrapper my-4"><a href="https://drive.google.com/file/d/1jX8zAfGH16GWE3MGUBY22tOqPj3-CpVt/view?usp=sharing" class="btn-white btn-icon mb-3 mb-sm-0 ml-1 btn btn-default"><span class="btn-inner--icon mr-1"><i class="fa fa-file"></i></span><span class="btn-inner--text">See My Resume</span></a></div>
                   </div>
                 </div>
               </div>
