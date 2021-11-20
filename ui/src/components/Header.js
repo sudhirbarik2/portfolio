@@ -9,18 +9,13 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 function Header() {
     return (
-        <div>
+        <div id='header'>
             <header>
                 <div class="container">
 
                     <div class="nav">
-                        <div/>
-                        <div class="nav1">
-                            <a href="../index.html">
-                                
-                                <h2 class="text-white" id="nav-title"><img src="SB_LOGO_Header.ico" alt="logo"></img>Sudhir Barik</h2>
-                            </a>
-                        </div>
+                       
+                        
                         <div class="nav2 navbar-main navbar-transparent navbar-light headroom navbar navbar-expand-lg headroom--not-bottom headroom--pinned headroom--top">
                             <a href="https://github.com/sudhirbarik2?tab=repositories" target="_blank" rel="noopener noreferrer"
                                 className="github social">

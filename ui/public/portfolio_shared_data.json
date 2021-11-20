@@ -19,6 +19,11 @@
     "skills": {
       "icons": [
         {
+          "name": "JavaScript",
+          "class": "devicon-javascript-plain colored",
+          "level": "70"
+        },
+        {
           "name": "React",
           "class":"devicon-react-original colored",
           "level": "60"
@@ -58,11 +63,7 @@
           "class": "devicon-typescript-plain colored",
           "level": "90"
         },
-        {
-          "name": "JavaScript",
-          "class": "devicon-javascript-plain colored",
-          "level": "70"
-        },
+        
         {
           "name": "Sass",
           "class": "devicon-sass-original colored",

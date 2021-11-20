@@ -8,9 +8,9 @@ class About extends Component {
   render() {
 
     var profilepic = "images/myProfile.jpg" ;
-    var sectionName = "About Me"
+    var sectionName = ""
       var hello = "Hi";
-      var about = "👋 I'm Davina Griss. Fictional person for preview purposes :) I'm working with newest front-end frameworks like Angular, React and Vue. What you are seeing now is portfolio template from Dorota1997. If you like this portfolio template, make sure to ⭐ the repository to make it more recognizable for other users. Thank you 💜"
+      var about = "👋 I'm Sudhir Barik. A passionate Full Stack Web Developer having an experience of building scalable Web applications with JavaScript / Reactjs / Angular / Nodejs / Express JS / MongoDB and some other cool libraries and frameworks and Cross Platform Web applications "
     
 
     return (
@@ -24,22 +24,13 @@ class About extends Component {
               <div className="polaroid">
                 <span style={{ cursor: "auto" }}>
                   <img
-                    height="250px"
+                    height="420px"
                     src={profilepic}
-                    alt="Avatar placeholder"
+                    alt="dp"
+                    border-radius= '50%'
                   />
-                  <Icon
-                    icon={angularIcon}
-                    style={{ fontSize: "400%", margin: "9% 5% 0 5%" }}
-                  />
-                  <Icon
-                    icon={reactIcon}
-                    style={{ fontSize: "400%", margin: "9% 5% 0 5%" }}
-                  />
-                  <Icon
-                    icon={vueIcon}
-                    style={{ fontSize: "400%", margin: "9% 5% 0 5%" }}
-                  />
+                  
+                  
                 </span>
               </div>
             </div>
