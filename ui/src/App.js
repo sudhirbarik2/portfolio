@@ -7,7 +7,7 @@ import About from "./components/About";
 import Experience from "./components/Experience";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
-
+import Edution from "./components/Education";
 class App extends Component {
 
   constructor(props) {
@@ -17,6 +17,8 @@ class App extends Component {
       foo: "bar",
       resumeData: {},
       sharedData: {},
+      educationData:{},
+      status:false
     };
   }
  
@@ -24,6 +26,7 @@ class App extends Component {
   componentDidMount() {
     this.loadSharedData();
     this.loadResumeFromPath();
+    this.loadEducation();
  
   }
 
@@ -49,35 +52,53 @@ class App extends Component {
       cache: false,
       success: function (data) {
         this.setState({ sharedData: data });
-        document.title = `${this.state.sharedData.basic_info.name}`;
       }.bind(this),
       error: function (xhr, status, err) {
         alert(err);
       },
     });
   }
-
+  loadEducation() {
+    $.ajax({
+      url: `education.json`,
+      dataType: "json",
+      cache: false,
+      success: function (data) {
+        // console.log("test");
+        // console.log(data.education);
+        this.setState({ educationData: data.education.educationInfo });
+        this.setState({status:true})
+      }.bind(this),
+      error: function (xhr, status, err) {
+        alert(err);
+      },
+    });
+  }
   render() {
-    return (
-      <div>
-        <Header/>
-        
-        <About/>
-        <Projects
-          resumeProjects={this.state.resumeData.projects}
-          resumeBasicInfo={this.state.resumeData.basic_info}
-        />
-        <Skills
-          sharedSkills={this.state.sharedData.skills}
-          resumeBasicInfo={this.state.resumeData.basic_info}
-        />
-        <Experience
-          resumeExperience={this.state.resumeData.experience}
-          resumeBasicInfo={this.state.resumeData.basic_info}
-        />
-        <Footer sharedBasicInfo={this.state.sharedData.basic_info} />
-      </div>
-    );
+      return (
+        this.state.status?
+        <div>
+          
+          <Header/>
+          
+          <About/>
+          <Projects
+            resumeProjects={this.state.resumeData.projects}
+            resumeBasicInfo={this.state.resumeData.basic_info}
+          />
+          <Skills
+            sharedSkills={this.state.sharedData.skills}
+            resumeBasicInfo={this.state.resumeData.basic_info}
+          />
+          <Edution educationData={this.state.educationData}/>
+          <Experience
+            resumeExperience={this.state.resumeData.experience}
+            resumeBasicInfo={this.state.resumeData.basic_info}
+          />
+          <Footer sharedBasicInfo={this.state.sharedData.basic_info} />
+        </div>:""
+      );
+    
   }
 }
 

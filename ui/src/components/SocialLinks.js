@@ -1,14 +1,5 @@
 import React from "react";
 
-import { Button } from "reactstrap";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faFacebook,
-  faTwitter,
-  faInstagram,
-  faGithub,
-  faLinkedin
-} from "@fortawesome/free-brands-svg-icons";
 import { SocialIcon } from 'react-social-icons';
 const SocialLinks = () => {
 	return (

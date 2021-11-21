@@ -1,19 +1,5 @@
 import React, { Component } from "react";
-import { Icon } from "@iconify/react";
-import angularIcon from "@iconify/icons-logos/angular-icon";
-import reactIcon from "@iconify/icons-logos/react";
-import vueIcon from "@iconify/icons-logos/vue";
-import SocialLinks from "./SocialLinks";
-import { Card, Col, Row, Container } from "reactstrap";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faFacebook,
-  faTwitter,
-  faInstagram,
-  faGithub,
-  faLinkedin
-} from "@fortawesome/free-brands-svg-icons";
-class About extends Component {
+import SocialLinks from "./SocialLinks";class About extends Component {
   render() {
 
     var profilepic = "images/myProfile.jpg" ;
@@ -80,7 +66,7 @@ class About extends Component {
                     <br />
                     {about}
                     <SocialLinks/>
-                    <div class="btn-wrapper my-4"><a href="https://drive.google.com/file/d/1jX8zAfGH16GWE3MGUBY22tOqPj3-CpVt/view?usp=sharing" class="btn-white btn-icon mb-3 mb-sm-0 ml-1 btn btn-default"><span class="btn-inner--icon mr-1"><i class="fa fa-file"></i></span><span class="btn-inner--text">See My Resume</span></a></div>
+                    <div class="btn-wrapper my-4"><a href="https://drive.google.com/file/d/1McOjKgR5U20SuLG5clABLG_SQSsYLj3Y/view?usp=sharing" class="btn-white btn-icon mb-3 mb-sm-0 ml-1 btn btn-default"><span class="btn-inner--icon mr-1"><i class="fa fa-file"></i></span><span class="btn-inner--text">{" "}See My Resume</span></a></div>
                   </div>
                 </div>
               </div>

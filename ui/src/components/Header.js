@@ -1,13 +1,5 @@
 import React from 'react';
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-    faFacebook,
-    faTwitter,
-    faInstagram,
-    faGithub,
-    faLinkedin
-} from "@fortawesome/free-brands-svg-icons";
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link} from "react-scroll";
 
 function Header() {
 
@@ -44,7 +36,8 @@ function Header() {
                             offset={-70}
                             duration={500} >
                             <a class="nav-link " href="#portfolio">Skills <span class="sr-only">(current)</span></a></Link>
-                </li><li class="nav-item active">
+                </li>
+                <li class="nav-item active">
                 <Link
                             activeClass="active"
                             to="resume"
@@ -53,6 +46,16 @@ function Header() {
                             offset={-70}
                             duration={500} >
                             <a class="nav-link " href="#portfolio">Experience <span class="sr-only">(current)</span></a></Link>
+                </li>
+                <li class="nav-item active">
+                <Link
+                            activeClass="active"
+                            to="education"
+                            spy={true}
+                            smooth={true}
+                            offset={-70}
+                            duration={500} >
+                            <a class="nav-link " href="#education">Education <span class="sr-only">(current)</span></a></Link>
                 </li>
                 <li class="nav-item active">
                     <a class="nav-link" href="#">Resume <span class="sr-only">(current)</span></a>

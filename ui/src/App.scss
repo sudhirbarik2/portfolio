@@ -137,10 +137,10 @@ html {
 }
 
 body {
-  background-color: rgba(0,0,0,1);
+  background-color: #c8d8e4;
   font-weight:600;
   text-align:center !important;
-  color: white;
+  color: #c8d8e4;
 }
 
 nav {
@@ -599,6 +599,10 @@ header h1 {
 	background: #2b6777;
 	padding-bottom: 5%;
 }
+#education {
+	background: #52ab98;
+	padding-bottom: 5%;
+}
 #header {
 	background: #2b6777;
 	padding-bottom: 2%;
@@ -609,7 +613,25 @@ header h1 {
 	margin-bottom: 15px;
 	text-align: center;
 }
+.shadow-sm {
+	box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+}
+.boxSize{
+	height: 130px !important;
+}
+.shadow,
+.profile-page .card-profile .card-profile-image img {
+	box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1),
+		0 5px 15px rgba(0, 0, 0, 0.07) !important;
+}
 
+.shadow-lg {
+	box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+}
+
+.shadow-none {
+	box-shadow: none !important;
+}
 .portfolio .portfolio-item .portfolio-item-caption {
 	-webkit-transition: all ease 0.5s;
 	-moz-transition: all ease 0.5s;
@@ -688,4 +710,77 @@ footer a:focus {
 .social{
 	height: 30px !important;
 	width: 30px !important;
+}
+.btn {
+	display: inline-block;
+	font-weight: 600;
+	color: #525f7f;
+	text-align: center;
+	vertical-align: middle;
+	user-select: none;
+	background-color: transparent;
+	border: 1px solid transparent;
+	padding: 0.625rem 1.25rem;
+	font-size: 0.875rem;
+	line-height: 1.5;
+	border-radius: 0.25rem;
+	transition: all 0.15s ease;
+}
+.btn-white {
+	color: #212529;
+	background-color: #fff;
+	border-color: #fff;
+	box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+	width: 150px !important;
+	height: 30px !important;
+}
+.btn-inner--text {
+	font-size: medium;
+}
+
+.btn-white:hover {
+	color: #212529;
+	background-color: #ececec;
+	border-color: #e6e6e6;
+}
+.btn-white:focus,
+.btn-white.focus {
+	box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08),
+		0 0 0 0 rgba(222, 222, 223, 0.5);
+}
+.btn-lg .btn-inner--icon,
+.btn-group-lg > .btn .btn-inner--icon {
+	font-size: 1.2rem;
+	position: relative;
+	top: 2px;
+}
+.btn-white.disabled,
+.btn-white:disabled {
+	color: #212529;
+	background-color: #fff;
+	border-color: #fff;
+}
+.btn-white:not(:disabled):not(.disabled):active,
+.btn-white:not(:disabled):not(.disabled).active,
+.show > .btn-white.dropdown-toggle {
+	color: #212529;
+	background-color: #e6e6e6;
+	border-color: #dfdfdf;
+}
+.btn-white:not(:disabled):not(.disabled):active:focus,
+.btn-white:not(:disabled):not(.disabled).active:focus,
+.show > .btn-white.dropdown-toggle:focus {
+	box-shadow: 0 0 0 0 rgba(222, 222, 223, 0.5);
+}
+.card-lift--hover:hover {
+	transform: translateY(-20px);
+	transition: all 0.15s ease;
+}
+.cardSize{
+	height: 240px;
+	font-size: medium;
+	background-color: #f2f2f2;
+}
+.eduHeader{
+	font-size: medium;
 }
